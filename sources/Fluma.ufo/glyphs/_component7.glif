@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_component7" format="2">
+  <outline>
+    <contour>
+      <point x="0.0" y="95.78018335937497" type="curve" smooth="yes"/>
+      <point x="97.28017591761694" y="95.78018335937497"/>
+      <point x="175.5" y="82.52215233443476"/>
+      <point x="175.5" y="43.101082511718744" type="curve" smooth="yes"/>
+      <point x="175.5" y="3.680012689002723"/>
+      <point x="91.63438254313988" y="0.0"/>
+      <point x="0.0" y="0.0" type="curve" smooth="yes"/>
+      <point x="-91.63438254313988" y="0.0"/>
+      <point x="-175.5" y="3.6800126890027194"/>
+      <point x="-175.5" y="43.101082511718744" type="curve" smooth="yes"/>
+      <point x="-175.5" y="82.52215233443476"/>
+      <point x="-97.28017591761694" y="95.78018335937497"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Wdieresis" format="2">
+  <advance width="1319.6155479501467"/>
+  <unicode hex="1E84"/>
+  <outline>
+    <component base="W"/>
+    <component base="_component0" xOffset="391.31" yOffset="279.01"/>
+    <component base="_component0" xOffset="550.02" yOffset="279.01"/>
+  </outline>
+</glyph>

@@ -1,0 +1,8 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+@TopMarks = [acutecomb gravecomb uni0302 tildecomb uni0304 uni0306 uni0307 uni0308 uni030A uni030C uni030B];
+feature ccmp {
+  sub i' @TopMarks by dotlessi;
+  sub j' @TopMarks by uni0237;
+  sub iogonek' @TopMarks by iogonek.dotless;
+} ccmp;

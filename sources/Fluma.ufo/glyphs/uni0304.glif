@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni0304" format="2">
+  <unicode hex="0304"/>
+  <anchor x="0" y="1055" name="_top"/>
+  <outline>
+    <component base="_component7" yOffset="1055.0"/>
+  </outline>
+</glyph>

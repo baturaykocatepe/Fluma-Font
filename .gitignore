@@ -1,0 +1,13 @@
+# Local reference only - the official Google Fonts project template, cloned
+# for structure/CI reference. Never part of the actual Fluma repo/release.
+_reference-template/
+
+# Backups made while iterating on the project file - not part of the repo.
+*.bak
+*.bak[0-9]*
+
+# OS cruft
+.DS_Store
+.venv/
+__pycache__/
+*.pyc

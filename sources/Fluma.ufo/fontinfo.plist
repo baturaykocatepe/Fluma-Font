@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>ascender</key>
+    <integer>1840</integer>
+    <key>capHeight</key>
+    <integer>1480</integer>
+    <key>copyright</key>
+    <string>Copyright 2026 The Fluma Project Authors (https://github.com/baturaykocatepe/Fluma-Font)</string>
+    <key>descender</key>
+    <integer>-840</integer>
+    <key>familyName</key>
+    <string>Fluma</string>
+    <key>openTypeGaspRangeRecords</key>
+    <array>
+      <dict>
+        <key>rangeGaspBehavior</key>
+        <array>
+          <integer>0</integer>
+          <integer>1</integer>
+          <integer>2</integer>
+          <integer>3</integer>
+        </array>
+        <key>rangeMaxPPEM</key>
+        <integer>65535</integer>
+      </dict>
+    </array>
+    <key>openTypeHheaAscender</key>
+    <integer>1840</integer>
+    <key>openTypeHheaDescender</key>
+    <integer>-840</integer>
+    <key>openTypeHheaLineGap</key>
+    <integer>0</integer>
+    <key>openTypeNameCompatibleFullName</key>
+    <string>Fluma Regular</string>
+    <key>openTypeNameDescription</key>
+    <string>A liquid organic display typeface where letters feel poured rather than drawn.</string>
+    <key>openTypeNameDesigner</key>
+    <string>Baturay Kocatepe</string>
+    <key>openTypeNameDesignerURL</key>
+    <string>https://www.behance.net/baturaykocatepe</string>
+    <key>openTypeNameLicense</key>
+    <string>This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at https://openfontlicense.org</string>
+    <key>openTypeNameLicenseURL</key>
+    <string>https://openfontlicense.org</string>
+    <key>openTypeNameManufacturer</key>
+    <string>Baturay Kocatepe</string>
+    <key>openTypeNameManufacturerURL</key>
+    <string>https://www.behance.net/baturaykocatepe</string>
+    <key>openTypeNameUniqueID</key>
+    <string>1.000;BaturayKocatepe;Fluma-Regular</string>
+    <key>openTypeNameVersion</key>
+    <string>Version 1.000</string>
+    <key>openTypeOS2Selection</key>
+    <array>
+      <integer>7</integer>
+      <integer>8</integer>
+    </array>
+    <key>openTypeOS2Type</key>
+    <array/>
+    <key>openTypeOS2TypoAscender</key>
+    <integer>1840</integer>
+    <key>openTypeOS2TypoDescender</key>
+    <integer>-840</integer>
+    <key>openTypeOS2TypoLineGap</key>
+    <integer>0</integer>
+    <key>openTypeOS2WeightClass</key>
+    <integer>400</integer>
+    <key>openTypeOS2WidthClass</key>
+    <integer>5</integer>
+    <key>openTypeOS2WinAscent</key>
+    <integer>1928</integer>
+    <key>openTypeOS2WinDescent</key>
+    <integer>840</integer>
+    <key>postscriptFontName</key>
+    <string>Fluma-Regular</string>
+    <key>postscriptFullName</key>
+    <string>Fluma Regular</string>
+    <key>postscriptUnderlinePosition</key>
+    <integer>-50</integer>
+    <key>postscriptUnderlineThickness</key>
+    <integer>10</integer>
+    <key>styleName</key>
+    <string>Regular</string>
+    <key>unitsPerEm</key>
+    <integer>2048</integer>
+    <key>versionMajor</key>
+    <integer>1</integer>
+    <key>versionMinor</key>
+    <integer>0</integer>
+    <key>xHeight</key>
+    <integer>1000</integer>
+  </dict>
+</plist>

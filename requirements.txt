@@ -1,0 +1,9 @@
+# Python packages used by this project.
+#
+# fontmake / fonttools: standard Google Fonts build/QA toolchain.
+# svgpathtools: used by sources/build_composites.py to import hand-drawn
+# SVG glyphs (e.g. the capital Eszett) into the Glyphr Studio project.
+fontmake==3.12.1
+fonttools==4.66.1
+ufoLib2==0.18.1
+svgpathtools

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="iogonek.dotless" format="2">
+  <advance width="383.8476289327132"/>
+  <anchor x="192" y="1053" name="top"/>
+  <outline>
+    <component base="dotlessi"/>
+    <component base="_component9" xOffset="219.49" yOffset="-113.03"/>
+  </outline>
+</glyph>

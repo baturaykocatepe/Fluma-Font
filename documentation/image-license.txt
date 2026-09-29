@@ -1,0 +1,5 @@
+The specimen images in documentation/article/ are by Baturay Kocatepe and are licensed under the Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0).
+
+https://creativecommons.org/licenses/by-sa/4.0/
+
+This image license is separate from the SIL Open Font License 1.1 that applies to the Fluma font software.
