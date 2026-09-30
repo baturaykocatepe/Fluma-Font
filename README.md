@@ -8,6 +8,8 @@ Fluma is a liquid organic display typeface with soft, tapering forms. It is inte
 
 Fluma is designed by Baturay Kocatepe. All 22 original exports appear in sequence in the [specimen gallery](documentation/SPECIMENS.md) and the [article](documentation/article/ARTICLE.en_us.html). The images have a [separate license](documentation/image-license.txt).
 
+The initial Glyphr Studio letterforms were drawn by Baturay Kocatepe. Claude Code assisted with construction of some Turkish and missing Latin characters in the GS2 source. Codex assisted with source corrections, the UFO conversion, OpenType feature generation, and technical QA. The editable source and build tools are included for review.
+
 ## Building
 
 The editable design source is the [Glyphr Studio](https://www.glyphrstudio.com) project `sources/Fluma.gs2`. The build converts it to `sources/Fluma.ufo`, adds OpenType mark positioning and source metadata, then compiles TTF and OTF binaries with fontmake. WOFF and WOFF2 are generated from the resulting TTF.
