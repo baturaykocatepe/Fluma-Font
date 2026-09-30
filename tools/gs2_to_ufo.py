@@ -85,15 +85,19 @@ def add_dotted_circle(font):
     pen = glyph.getPen()
     radius = 43
     kappa = 0.5522847498
+    def point(x, y):
+        # Avoid platform-specific last-bit trig differences in the committed UFO.
+        return (round(x, 6), round(y, 6))
+
     for index in range(12):
         angle = 2 * math.pi * index / 12
         cx = 500 + 330 * math.cos(angle)
         cy = 500 + 330 * math.sin(angle)
-        pen.moveTo((cx + radius, cy))
-        pen.curveTo((cx + radius, cy + kappa * radius), (cx + kappa * radius, cy + radius), (cx, cy + radius))
-        pen.curveTo((cx - kappa * radius, cy + radius), (cx - radius, cy + kappa * radius), (cx - radius, cy))
-        pen.curveTo((cx - radius, cy - kappa * radius), (cx - kappa * radius, cy - radius), (cx, cy - radius))
-        pen.curveTo((cx + kappa * radius, cy - radius), (cx + radius, cy - kappa * radius), (cx + radius, cy))
+        pen.moveTo(point(cx + radius, cy))
+        pen.curveTo(point(cx + radius, cy + kappa * radius), point(cx + kappa * radius, cy + radius), point(cx, cy + radius))
+        pen.curveTo(point(cx - kappa * radius, cy + radius), point(cx - radius, cy + kappa * radius), point(cx - radius, cy))
+        pen.curveTo(point(cx - radius, cy - kappa * radius), point(cx - kappa * radius, cy - radius), point(cx, cy - radius))
+        pen.curveTo(point(cx + kappa * radius, cy - radius), point(cx + radius, cy - kappa * radius), point(cx + radius, cy))
         pen.closePath()
     glyph.appendAnchor(Anchor(x=500, y=1053, name="top"))
     glyph.appendAnchor(Anchor(x=500, y=-85, name="bottom"))
