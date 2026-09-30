@@ -22,7 +22,7 @@ fontspector version: 1.8.0
 
 
 > Lcaron, dcaron, lcaron, tcaron should NOT be composed with quoteright or quotesingle or comma or caron(comb). It should be composed with a distinctive glyph which doesn't look like an apostrophe.
-> 
+>
 > Source: https://ilovetypography.com/2009/01/24/on-diacritics/ http://diacritics.typo.cz/index.php?id=5 https://www.typotheque.com/articles/lcaron
 
 
@@ -35,23 +35,23 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/3308]
 
 
 - ⚠️ **WARN** Lcaron is decomposed and therefore could not be checked. Please check manually. [code: decomposed-outline]
-  
-  
+
+
 
 
 - ⚠️ **WARN** dcaron is decomposed and therefore could not be checked. Please check manually. [code: decomposed-outline]
-  
-  
+
+
 
 
 - ⚠️ **WARN** lcaron is decomposed and therefore could not be checked. Please check manually. [code: decomposed-outline]
-  
-  
+
+
 
 
 - ⚠️ **WARN** tcaron is decomposed and therefore could not be checked. Please check manually. [code: decomposed-outline]
-  
-  
+
+
 
 </div>
 </details>
@@ -66,9 +66,9 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/3308]
 
 
 > Visually QAing thousands of glyphs by hand is tiring. Most glyphs can only be constructured in a handful of ways. This means a glyph's contour count will only differ slightly amongst different fonts, e.g a 'g' could either be 2 or 3 contours, depending on whether its double story or single story.
-> 
+>
 > However, a quotedbl should have 2 contours, unless the font belongs to a display family.
-> 
+>
 > This check currently does not cover variable fonts because there's plenty of alternative ways of constructing glyphs with multiple outlines for each feature in a VarFont. The expected contour count data for this check is currently optimized for the typical construction of glyphs in static fonts.
 
 
@@ -98,8 +98,8 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/4829]
 * hungarumlaut (U+02DD): found 1, expected one of: [2]
 * uni0308 (U+0308): found 1, expected one of: [2]
 * uni030B (U+030B): found 1, expected one of: [2] [code: contour-count]
-  
-  
+
+
 
 </div>
 </details>
@@ -114,7 +114,7 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/4829]
 
 
 > #,         It is a common practice to have math signs sharing the same width         (preferably the same width as tabular figures accross the entire font family).
-> 
+>
 > This probably comes from the will to avoid additional tabular math signs knowing that their design can easily share the same width.
 
 
@@ -133,8 +133,8 @@ width=792: equal
 width=677: logicalnot
 width=703: less
 width=662: divide [code: width-outliers]
-  
-  
+
+
 
 </div>
 </details>
@@ -160,8 +160,8 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/2967]
 
 
 - ⚠️ **WARN** Font is missing the Indian Rupee Sign glyph. Please add a glyph for Indian Rupee Sign (₹) at codepoint U+20B9. [code: missing-rupee]
-  
-  
+
+
 
 </div>
 </details>
@@ -312,8 +312,8 @@ Original proposal: [https://github.com/googlefonts/fontbakery/issues/4147]
 |   The following auxiliary characters are missing from the font: Ŗ        |                              |
 |   The following auxiliary characters are missing from the font: ō        |                              |
 |   The following auxiliary characters are missing from the font: ŗ        |                              | [code: warning-language-shaping]
-  
-  
+
+
 
 </div>
 </details>
@@ -328,7 +328,7 @@ Original proposal: [https://github.com/googlefonts/fontbakery/issues/4147]
 
 
 > This check looks for consecutive line segments which have the same angle. This normally happens if an outline point has been added by accident.
-> 
+>
 > This check is not run for variable fonts, as they may legitimately have colinear vectors.
 
 
@@ -352,8 +352,8 @@ Original proposal: [https://github.com/fonttools/fontbakery/pull/3088]
 * dollar (U+0024): from (488.0, 311.0) to (489.0, 311.0) is colinear with segment from (489.0, 311.0) to (489.0, 311.0)
 * bracketleft (U+005B): from (343.0, 197.0) to (345.0, 197.0) is colinear with segment from (345.0, 197.0) to (345.0, 197.0)
 ... and 40 others [code: found-colinear-vectors]
-  
-  
+
+
 
 </div>
 </details>
@@ -382,8 +382,8 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/3064]
 
 * hungarumlaut (U+02DD): Line(Line { p0: (131.0, 1180.0), p1: (130.0, 1173.0) })/Quad(QuadBez { p0: (130.0, 1173.0), p1: (145.0, 1219.0), p2: (163.0, 1233.5) }) = 9.93036958204319 degrees
 * uni030B (U+030B): Line(Line { p0: (-25.0, 1180.0), p1: (-26.0, 1173.0) })/Quad(QuadBez { p0: (-26.0, 1173.0), p1: (-11.0, 1219.0), p2: (7.0, 1233.5) }) = 9.93036958204319 degrees [code: found-jaggy-segments]
-  
-  
+
+
 
 </div>
 </details>
@@ -398,7 +398,7 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/3064]
 
 
 > Some rasterizers encounter difficulties when rendering glyphs with overlapping path segments.
-> 
+>
 > A path segment is a section of a path defined by two on-curve points. When two segments share the same coordinates, they are considered overlapping.
 
 
@@ -422,8 +422,8 @@ Original proposal: [https://github.com/google/fonts/issues/7594#issuecomment-240
 * aring (U+00E5): Line(Line { p0: (385.0, 608.0), p1: (385.0, 608.0) }) has the same coordinates as a previous segment.
 * amacron (U+0101): Line(Line { p0: (385.0, 608.0), p1: (385.0, 608.0) }) has the same coordinates as a previous segment.
 ... and 15 others [code: overlapping-path-segments]
-  
-  
+
+
 
 </div>
 </details>
@@ -439,7 +439,7 @@ set to optimize rendering? (googlefonts/gasp)</summary>
 
 
 > Traditionally version 0 'gasp' tables were set so that font sizes below 8 ppem had no grid fitting but did have antialiasing. From 9-16 ppem, just grid fitting. And fonts above 17ppem had both antialiasing and grid fitting toggled on. The use of accelerated graphics cards and higher resolution screens make this approach obsolete. Microsoft's DirectWrite pushed this even further with much improved rendering built into the OS and apps.
-> 
+>
 > In this scenario it makes sense to simply toggle all 4 flags ON for all font sizes.
 
 
@@ -450,12 +450,12 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/4829]
 
 
 
-  
+
 
 
 - ⚠️ **WARN** The gasp range 0xFFFF value 0x0A should be set to 0x0F [code: unset-flags]
-  
-  
+
+
 
 </div>
 </details>
@@ -470,13 +470,13 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/4829]
 
 
 > Microsoft keeps a list of font vendors and their respective contact info. This list is updated regularly and is indexed by a 4-char "Vendor ID" which is stored in the achVendID field of the OS/2 table.
-> 
+>
 > Registering your ID is not mandatory, but it is a good practice since some applications may display the type designer / type foundry contact info on some dialog and also because that info will be visible on Microsoft's website:
-> 
+>
 > https://docs.microsoft.com/en-us/typography/vendors/
-> 
+>
 > This check verifies whether or not a given font's vendor ID is registered in that list or if it has some of the default values used by the most common font editors.
-> 
+>
 > Each new FontBakery release includes a cached copy of that list of vendor IDs. If you registered recently, you're safe to ignore warnings emitted by this check, since your ID will soon be included in one of our upcoming releases.
 
 
@@ -491,8 +491,8 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/3943, https:/
 - ⚠️ **WARN** OS/2 VendorID value 'NONE' is not yet recognized.
 If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-  
-  
+
+
 
 </div>
 </details>
@@ -512,7 +512,7 @@ If you registered it recently, then it's safe to ignore this warning message. Ot
 
 
 > This check ensures that all encoded glyphs in the font are covered by a subset declared in the METADATA.pb. Google Fonts splits the font into a set of subset fonts based on the contents of the `subsets` field and the subset definitions in the `glyphsets` repository.
-> 
+>
 > Any encoded glyphs which are not by any of these subset definitions will not be served in the subsetted fonts, and so will be unreachable to the end user.
 
 
@@ -538,8 +538,8 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/4097 and http
 ... and 3 others
 
 Or you can add the above codepoints to one of the subsets supported by the font: latin-ext, latin [code: unreachable-subsetting]
-  
-  
+
+
 
 </div>
 </details>
@@ -555,10 +555,7 @@ Or you can add the above codepoints to one of the subsets supported by the font:
 
 ### Summary
 
-| ⚠️ WARN | ℹ️ INFO | ✅ PASS | ⏩ SKIP | 
+| ⚠️ WARN | ℹ️ INFO | ✅ PASS | ⏩ SKIP |
 | ---|---|---|---|
-| 14 | 8 | 105 | 81 | 
-| 7% | 4% | 50% | 39% | 
-
-
-
+| 14 | 8 | 105 | 81 |
+| 7% | 4% | 50% | 39% |
