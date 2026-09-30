@@ -6,4 +6,5 @@
 fontmake==3.12.1
 fonttools==4.66.1
 ufoLib2==0.18.1
+brotli==1.2.0
 svgpathtools

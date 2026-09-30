@@ -1,6 +1,7 @@
 # Local reference only - the official Google Fonts project template, cloned
 # for structure/CI reference. Never part of the actual Fluma repo/release.
 _reference-template/
+fonts/exports-glyphr-studio-*/
 
 # Backups made while iterating on the project file - not part of the repo.
 *.bak

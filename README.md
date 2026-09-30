@@ -6,11 +6,11 @@ Fluma is a liquid organic display typeface with soft, tapering forms. It is inte
 
 ## About
 
-Fluma is designed by Baturay Kocatepe. All 22 original exports appear in sequence in the [specimen gallery](documentation/SPECIMENS.md) and the [article](documentation/ARTICLE.en_us.html). The images have a [separate license](documentation/image-license.txt).
+Fluma is designed by Baturay Kocatepe. All 22 original exports appear in sequence in the [specimen gallery](documentation/SPECIMENS.md) and the [article](documentation/article/ARTICLE.en_us.html). The images have a [separate license](documentation/image-license.txt).
 
 ## Building
 
-The editable design source is the [Glyphr Studio](https://www.glyphrstudio.com) project `sources/Fluma.gs2`. The build converts it to `sources/Fluma.ufo`, adds OpenType mark positioning and source metadata, then compiles TTF and OTF binaries with fontmake.
+The editable design source is the [Glyphr Studio](https://www.glyphrstudio.com) project `sources/Fluma.gs2`. The build converts it to `sources/Fluma.ufo`, adds OpenType mark positioning and source metadata, then compiles TTF and OTF binaries with fontmake. WOFF and WOFF2 are generated from the resulting TTF.
 
 Exporting directly from Glyphr Studio bypasses the OpenType features in this build. For releases, use the command below after editing the GS2 source.
 
@@ -23,7 +23,7 @@ bash sources/build.sh
 
 - **Primary source:** `sources/Fluma.gs2`. Commit this file when the outlines change.
 - **Conversion:** `tools/gs2_to_ufo.py` generates `sources/Fluma.ufo`. The UFO is also kept as a standard editable source for Google Fonts review.
-- **Outputs:** `fonts/ttf/Fluma-Regular.ttf` and `fonts/otf/Fluma-Regular.otf`.
+- **Outputs:** `fonts/ttf/Fluma-Regular.ttf`, `fonts/otf/Fluma-Regular.otf`, `fonts/woff/Fluma-Regular.woff`, and `fonts/woff2/Fluma-Regular.woff2`. Google Fonts uses the TTF.
 - **Composite helper:** `sources/build_composites.py` is a separate source editing tool for deriving accented letters from base forms. It edits the GS2 file in place and is not part of the normal build. If intentionally regenerating composites, back up and review the source change first:
   ```
   python3 sources/build_composites.py sources/Fluma.gs2 sources/GF_Latin_Core.nam
@@ -34,7 +34,7 @@ bash sources/build.sh
   cp fonts/ttf/Fluma-Regular.ttf /tmp/fluma/
   fontspector -p googlefonts /tmp/fluma/Fluma-Regular.ttf
   ```
-  See the [current technical readiness report](documentation/TECHNICAL_READINESS-2026-09-30.md) and [Fontspector output](documentation/qa/fontspector-2026-09-30-rebuilt.md). The [initial audit](documentation/TECHNICAL_AUDIT-2026-09-30.md) is retained for comparison.
+  See the [current technical readiness report](documentation/TECHNICAL_READINESS-2026-09-30.md) and [Fontspector output](documentation/qa/fontspector-2026-09-30-final.md). The [initial audit](documentation/TECHNICAL_AUDIT-2026-09-30.md) is retained for comparison.
 - **Local inventory:** `python3 tools/audit_font.py` compares source, local Latin Core list, and TTF/OTF metadata and outlines. Visual proofing is still needed for aesthetic decisions.
 
 ## Changelog

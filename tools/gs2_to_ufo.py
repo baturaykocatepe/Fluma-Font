@@ -193,7 +193,8 @@ def convert(source_path, output_path):
     info.openTypeOS2WinDescent = 840
     info.openTypeOS2Type = []
     info.openTypeOS2Selection = [7, 8]
-    info.openTypeGaspRangeRecords = [{"rangeMaxPPEM": 65535, "rangeGaspBehavior": [0, 1, 2, 3]}]
+    # Google Fonts recommends grayscale/symmetric smoothing for unhinted statics.
+    info.openTypeGaspRangeRecords = [{"rangeMaxPPEM": 65535, "rangeGaspBehavior": [1, 3]}]
     info.postscriptUnderlinePosition = settings["underlinePosition"]
     info.postscriptUnderlineThickness = settings["underlineThickness"]
 
