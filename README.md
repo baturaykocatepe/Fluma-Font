@@ -8,11 +8,11 @@ Fluma is a liquid organic display typeface with soft, tapering forms. It is inte
 
 Fluma is designed by Baturay Kocatepe. All 22 original exports appear in sequence in the [specimen gallery](documentation/SPECIMENS.md) and the [article](documentation/article/ARTICLE.en_us.html). The images have a [separate license](documentation/image-license.txt).
 
-The initial Glyphr Studio letterforms were drawn by Baturay Kocatepe. Claude Code assisted with construction of some Turkish and missing Latin characters in the GS2 source. Codex assisted with source corrections, the UFO conversion, OpenType feature generation, and technical QA. The editable source and build tools are included for review.
+Baturay Kocatepe directed the typeface and states that he is its sole copyright holder. The project history records use of GPT Image for an early character sheet, Illustrator Image Trace for vectorization, and Adobe Firefly for some later character references; the resulting shapes were developed in Glyphr Studio. Claude Code assisted with construction of some Turkish and missing Latin characters in the GS2 source. Codex assisted with source corrections, the UFO conversion, OpenType feature generation, and technical QA. This AI-assisted production history is disclosed for review; the editable source and build tools are included.
 
 ## Building
 
-The editable design source is the [Glyphr Studio](https://www.glyphrstudio.com) project `sources/Fluma.gs2`. The build converts it to `sources/Fluma.ufo`, adds OpenType mark positioning and source metadata, then compiles TTF and OTF binaries with fontmake. WOFF and WOFF2 are generated from the resulting TTF.
+The editable design source is the [Glyphr Studio](https://www.glyphrstudio.com) project `sources/Fluma.gs2`. The build converts it to `sources/Fluma.ufo`, adds OpenType mark positioning and source metadata, compiles TTF and OTF binaries with fontmake, and adds static STAT and Latin script `meta` tables. WOFF and WOFF2 are generated from the resulting TTF.
 
 Exporting directly from Glyphr Studio bypasses the OpenType features in this build. For releases, use the command below after editing the GS2 source.
 
@@ -36,7 +36,7 @@ bash sources/build.sh
   cp fonts/ttf/Fluma-Regular.ttf /tmp/fluma/
   fontspector -p googlefonts /tmp/fluma/Fluma-Regular.ttf
   ```
-  See the [current technical readiness report](documentation/TECHNICAL_READINESS-2026-09-30.md) and [Fontspector output](documentation/qa/fontspector-2026-09-30-final.md). The [initial audit](documentation/TECHNICAL_AUDIT-2026-09-30.md) is retained for comparison.
+  See the [current technical readiness report](documentation/TECHNICAL_READINESS-2026-09-30.md), [Fontspector output](documentation/qa/fontspector-2026-09-30-current.md), and [warning review](documentation/qa/WARN_REVIEW-2026-09-30.md). The [initial audit](documentation/TECHNICAL_AUDIT-2026-09-30.md) is retained for comparison.
 - **Local inventory:** `python3 tools/audit_font.py` compares source, local Latin Core list, and TTF/OTF metadata and outlines. Visual proofing is still needed for aesthetic decisions.
 
 ## Changelog

@@ -1,0 +1,21 @@
+# Fluma Fontspector warning review, 2026-09-30
+
+Fontspector 1.8.0 ran 203 checks with the `googlefonts` profile on the current TTF with network access: 105 PASS, 14 WARN, 0 FAIL, 0 ERROR, 0 FATAL, 81 SKIP, 8 INFO. The 14 WARN results come from 11 check types; four are individual caron glyph notices. The [complete tool output](fontspector-2026-09-30-current.md) has glyph coordinates and the full language table.
+
+The previous build had 16 WARN. A reproducible finalization step added an upright static STAT table and Latin `meta` ScriptLangTags to TTF and OTF, resolving two notices. These tables are carried into WOFF and WOFF2. Outlines, advances, cmap, and OpenType positioning/substitution tables are byte-identical to the previous TTF build.
+
+| Warning | Count | Assessment and next step |
+| --- | ---: | --- |
+| `googlefonts/metadata/unreachable_subsetting` | 1 | Some spacing and combining marks fall outside the local Latin and Latin Extended subset definitions. No Google Fonts catalog `METADATA.pb` exists upstream. Review subset assignment with the onboarding team; do not add unrelated script subsets to hide this warning. |
+| `alt_caron` | 4 | Lcaron, dcaron, lcaron, and tcaron are decomposed in the compiled font, so this automated check cannot inspect their distinctive caron shapes. Visually proof the four glyphs; a human decision is needed before changing their shapes. |
+| `contour_count` | 1 | Seven glyphs differ from common contour counts: idieresis, imacron, lacute, dieresis, hungarumlaut, uni0308, and uni030B. Some are intentionally connected display forms; inspect each at large and small sizes and confirm the mapping. |
+| `math_signs_width` | 1 | Equal, less, greater, logicalnot, and divide differ from the most common math-sign advance (779 units). Width normalization would change the design's spacing and requires a design decision. |
+| `rupee` | 1 | U+20B9 is absent. Fluma is a Latin display font, not an Indic font. This character is not in GF Latin Core. Add it only if expanding the character set intentionally. |
+| `googlefonts/glyphsets/shape_languages` | 1 | The heuristic reports missing auxiliary characters in several Latin languages and mark attachment failures for some stacked Lithuanian combinations. The GF Latin Core codepoints are complete, but this is a real limit on broader language claims. Do not claim complete support for those auxiliary orthographies; expand and proof marks before such a claim. |
+| `outline_colinear_vectors` | 1 | Several compiled contours contain colinear or zero-length segments, including E, V, a, w, zero, and four. These merit source-level outline review. Mechanical coordinate edits could alter the handwritten shapes, so this was not silently changed. |
+| `outline_jaggy_segments` | 1 | The two related double-acute glyphs have a sharp transition near the same source outline. Inspect and smooth deliberately in the GS2 source if visually undesirable. |
+| `overlapping_path_segments` | 1 | Zero-length repeated path segments were detected in a and numbersign and their accented derivatives. Review the source paths and compiled results; this is a rendering quality risk in some rasterizers. |
+| `googlefonts/gasp` | 1 | Fontspector asks for all four flags (0x000F), while the [Google Fonts static guide](https://googlefonts.github.io/gf-guide/statics.html) explicitly recommends 0x000A across all sizes for an unhinted static display face. Fluma follows the latter. Flag the conflict during onboarding. |
+| `googlefonts/vendor_id` | 1 | The vendor ID is `NONE`. A unique registered Microsoft vendor ID has not been supplied. It is not a Google Fonts FAIL; registration is optional. Do not invent a registered ID. |
+
+These are not 14 missing required Latin Core characters. Fontspector's [QA guide](https://googlefonts.github.io/gf-guide/qa.html) says FAIL must be corrected, while WARN requires human judgment. Publication and design quality remain Google Fonts decisions.

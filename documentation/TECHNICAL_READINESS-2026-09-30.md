@@ -2,7 +2,7 @@
 
 ## Verified package
 
-The canonical editable source is `sources/Fluma.gs2`. `sources/build.sh` converts it to `sources/Fluma.ufo` and builds `fonts/ttf/Fluma-Regular.ttf` and `fonts/otf/Fluma-Regular.otf`. Python dependencies are listed in `requirements.txt`. Two consecutive builds produced byte-identical TTF and OTF files with the build date pinned to 2026-09-30 UTC.
+The canonical editable source is `sources/Fluma.gs2`. `sources/build.sh` converts it to `sources/Fluma.ufo` and builds `fonts/ttf/Fluma-Regular.ttf` and `fonts/otf/Fluma-Regular.otf`. Its finalization step adds a static upright STAT axis and Latin `meta` tags. Python dependencies are listed in `requirements.txt`. Two consecutive builds produced byte-identical TTF, OTF, WOFF, and WOFF2 files with the build date pinned to 2026-09-30 UTC. The new tables did not change glyf, loca, hmtx, cmap, GDEF, GPOS, or GSUB bytes compared with the preceding build.
 
 The source includes the previously missing Ĕ and a nonempty ĕ derived from the existing E/e and breve shapes. It also contains license and copyright metadata that matches `OFL.txt`. The UFO conversion adds OpenType mark attachment and dotless i/j substitution for top combining marks. Empty U+00AD was removed; empty zero-width line and paragraph separators were added. U+25CC dotted circle is generated as a mark support glyph.
 
@@ -10,7 +10,7 @@ The final TTF, OTF, WOFF, and WOFF2 each map 337 Unicode codepoints. All 319 cod
 
 ## Automated QA
 
-Fontspector 1.8.0, `googlefonts` profile, final TTF, correctly named `fluma` family directory and working network: **203 checks, 102 PASS, 16 WARN, 0 FAIL, 0 ERROR, 0 FATAL, 84 SKIP, 6 INFO**. [Full final report](qa/fontspector-2026-09-30-final.md). The first Glyphr export had 71 FAIL in the [initial audit](TECHNICAL_AUDIT-2026-09-30.md). The direct Glyphr export does not include the UFO build's OpenType fixes; future releases must use `sources/build.sh`.
+Fontspector 1.8.0, `googlefonts` profile, current TTF, correctly named `fluma` family directory and working network: **203 checks, 105 PASS, 14 WARN, 0 FAIL, 0 ERROR, 0 FATAL, 81 SKIP, 8 INFO**. [Current full report](qa/fontspector-2026-09-30-current.md) and [review of every remaining warning](qa/WARN_REVIEW-2026-09-30.md). The preceding build had 16 WARN; STAT and `meta` warnings were resolved. The first Glyphr export had 71 FAIL in the [initial audit](TECHNICAL_AUDIT-2026-09-30.md). The direct Glyphr export does not include the UFO build's OpenType fixes; future releases must use `sources/build.sh`.
 
 The remaining WARN items require design or distribution judgment rather than a mechanical pass:
 
@@ -19,7 +19,7 @@ The remaining WARN items require design or distribution judgment rather than a m
 | Contours and outlines | Tiny colinear and overlapping segments, and two jaggy double-acute outlines remain. Decomposed alternate carons and unusual contour counts need manual glyph review. Preserve the approved forms until reviewed. |
 | Glyph coverage | GF Latin Core passes; auxiliary characters for some other languages and the optional rupee sign are not included. Do not claim broader language coverage from the Latin Core result. |
 | Spacing | Several math symbols have different advances. Review as a design choice before changing widths. |
-| Metadata and tables | Static font has no STAT or meta ScriptLangTags table. Vendor ID is `NONE` because no registered vendor ID was provided. The local package has no Google Fonts `METADATA.pb`, so the subsetting warning is a staging condition. |
+| Metadata and tables | The static STAT and Latin ScriptLangTags `meta` tables are now present. Vendor ID is `NONE` because no registered vendor ID was provided. The local package has no Google Fonts `METADATA.pb`, so the subsetting warning is a staging condition. |
 | Unhinted smoothing | The font uses GASP 0x000A as the [Google Fonts static font guide](https://googlefonts.github.io/gf-guide/statics.html) recommends for an unhinted display face. Fontspector 1.8.0 separately warns that 0x000F is expected. This conflict needs Google Fonts review; the explicit unhinted guidance was followed. |
 
 ## Specimen images
@@ -33,7 +33,7 @@ Specimen 21 visibly states “334 encoded characters,” which reflects the firs
 - The public [Fluma-Font GitHub repository](https://github.com/baturaykocatepe/Fluma-Font) exists. A fresh public clone was rebuilt and produced byte-identical TTF, OTF, WOFF, and WOFF2 files; it contained all 22 article images. The read-only [GitHub Actions build](https://github.com/baturaykocatepe/Fluma-Font/actions/runs/36654587323) passed on Ubuntu after a cross-platform dotted-circle rounding correction. A Google Fonts submission issue is still required.
 - The copyright holder must complete Google's Contributor License Agreement personally. Font design quality, ownership/originality review, and final catalog acceptance belong to Google Fonts; automated QA cannot guarantee them.
 - The four direct Glyphr Studio exports of 2026-09-30 are preserved locally in `fonts/exports-glyphr-studio-2026-09-30/` and excluded from Git. They map 336 codepoints and lack the GDEF/GSUB features of the release build. The four files in the main `fonts/` format folders are from `sources/build.sh`.
-- Before submitting, inspect the 16 WARN items in the full report and proof the rebuilt font in actual target apps. Reinstalling the font locally is required for existing applications to use these new binaries.
+- Before submitting, inspect the 14 remaining WARN items in the [warning review](qa/WARN_REVIEW-2026-09-30.md) and proof the rebuilt font in actual target apps. Reinstalling the font locally is required for existing applications to use these new binaries.
 
 ## Reference template comparison
 
