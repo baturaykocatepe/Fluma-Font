@@ -6,7 +6,7 @@ The canonical editable source is `sources/Fluma.gs2`. `sources/build.sh` convert
 
 The source includes the previously missing Ĕ and a nonempty ĕ derived from the existing E/e and breve shapes. It also contains license and copyright metadata that matches `OFL.txt`. The UFO conversion adds OpenType mark attachment and dotless i/j substitution for top combining marks. Empty U+00AD was removed; empty zero-width line and paragraph separators were added. U+25CC dotted circle is generated as a mark support glyph.
 
-The final TTF, OTF, WOFF, and WOFF2 each map 337 Unicode codepoints. All 319 codepoints in the local `GF_Latin_Core.nam` are present with outlines except the expected spaces. The TTF and OTF copyright, license names, cap height and x-height match the source. WOFF and WOFF2 are generated from the TTF and contain the same OpenType features. A visual side-by-side proof of selected old and new strings is in `qa/proof-2026-09-30.png`; it does not replace full application and design proofing.
+The final TTF, OTF, WOFF, and WOFF2 each map 337 Unicode codepoints. All 319 codepoints in the local `GF_Latin_Core.nam` are present with outlines except the expected spaces. The TTF and OTF copyright, license names, cap height and x-height match the source. WOFF and WOFF2 are generated from the TTF and contain the same OpenType features. The current TTF and OTF copies under `markdown/fluma/` have matching SHA-256 hashes. A visual side-by-side proof of selected old and new strings is in `qa/proof-2026-09-30.png`; it does not replace full application and design proofing.
 
 ## Automated QA
 
@@ -30,10 +30,20 @@ Specimen 21 visibly states “334 encoded characters,” which reflects the firs
 
 ## Publication dependencies
 
-- The public [Fluma-Font GitHub repository](https://github.com/baturaykocatepe/Fluma-Font) exists. Verify its files and build from a fresh clone after pushing. A Google Fonts submission issue is still required.
+- The public [Fluma-Font GitHub repository](https://github.com/baturaykocatepe/Fluma-Font) exists. A fresh public clone was rebuilt and produced byte-identical TTF, OTF, WOFF, and WOFF2 files; it contained all 22 article images. A Google Fonts submission issue is still required.
 - The copyright holder must complete Google's Contributor License Agreement personally. Font design quality, ownership/originality review, and final catalog acceptance belong to Google Fonts; automated QA cannot guarantee them.
 - The four direct Glyphr Studio exports of 2026-09-30 are preserved locally in `fonts/exports-glyphr-studio-2026-09-30/` and excluded from Git. They map 336 codepoints and lack the GDEF/GSUB features of the release build. The four files in the main `fonts/` format folders are from `sources/build.sh`.
 - Before submitting, inspect the 16 WARN items in the full report and proof the rebuilt font in actual target apps. Reinstalling the font locally is required for existing applications to use these new binaries.
+
+## Reference template comparison
+
+The former `_reference-template` directory was a clone of `googlefonts/googlefonts-project-template`. It was moved intact to `../googlefonts-project-template-reference/` so example Radio Canada sources and assets cannot be confused with Fluma deliverables. The essential upstream files are present in this Fluma repository: `AUTHORS.txt`, `CONTRIBUTORS.txt`, `OFL.txt`, README with a specimen and build instructions, `documentation/`, `sources/Fluma.gs2`, committed `sources/Fluma.ufo`, `sources/build.sh`, `fonts/ttf/`, `requirements.txt`, and `.gitignore`. A small read-only GitHub Actions build check was added in place of the template's wider workflow.
+
+The template's `Makefile`, `config.yaml`, proof-page scripts, `requirements.in`, Renovate configuration, and templating metadata are optional conveniences, not missing Google Fonts requirements. `build.sh` already fills the required one-command build role of `config.yaml`. Its Radio Canada files must not be copied into Fluma. The current [Article guide](https://googlefonts.github.io/gf-guide/article.html) and [promotion guide](https://googlefonts.github.io/gf-guide/promotion.html) place Article images together under an `article/` directory; Fluma uses `documentation/article/` for this upstream package.
+
+## Submission form assertions to confirm
+
+The [current Google Fonts new-font issue template](https://github.com/google/fonts/blob/main/.github/ISSUE_TEMPLATE/1_add-font.md) asks the copyright holder to affirm that the entire family is OFL, no larger retail/Pro version exists, all copyright holders have authorized publication, AI tools used during creation are disclosed, the upstream repo will be maintained, and the full contribution rules are met. The source, license, name, and Latin Core claims are locally supported. Personal ownership, other versions, future maintenance, and CLA status cannot be established from the repository alone. Claude Code and Codex assistance in character construction and technical build must be disclosed in the issue. The [fontdata name check](https://namecheck.fontdata.com/?q=Fluma) returned no exact match for Fluma on 2026-09-30, though it is not a trademark clearance.
 
 ## Official references
 
