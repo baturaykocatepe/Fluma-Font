@@ -30,7 +30,7 @@ Specimen 21 visibly states “334 encoded characters,” which reflects the firs
 
 ## Publication dependencies
 
-- The public [Fluma-Font GitHub repository](https://github.com/baturaykocatepe/Fluma-Font) exists. A fresh public clone was rebuilt and produced byte-identical TTF, OTF, WOFF, and WOFF2 files; it contained all 22 article images. A Google Fonts submission issue is still required.
+- The public [Fluma-Font GitHub repository](https://github.com/baturaykocatepe/Fluma-Font) exists. A fresh public clone was rebuilt and produced byte-identical TTF, OTF, WOFF, and WOFF2 files; it contained all 22 article images. The read-only [GitHub Actions build](https://github.com/baturaykocatepe/Fluma-Font/actions/runs/36654587323) passed on Ubuntu after a cross-platform dotted-circle rounding correction. A Google Fonts submission issue is still required.
 - The copyright holder must complete Google's Contributor License Agreement personally. Font design quality, ownership/originality review, and final catalog acceptance belong to Google Fonts; automated QA cannot guarantee them.
 - The four direct Glyphr Studio exports of 2026-09-30 are preserved locally in `fonts/exports-glyphr-studio-2026-09-30/` and excluded from Git. They map 336 codepoints and lack the GDEF/GSUB features of the release build. The four files in the main `fonts/` format folders are from `sources/build.sh`.
 - Before submitting, inspect the 16 WARN items in the full report and proof the rebuilt font in actual target apps. Reinstalling the font locally is required for existing applications to use these new binaries.
