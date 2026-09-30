@@ -8,6 +8,7 @@ import unicodedata
 from pathlib import Path
 
 from fontTools.agl import UV2AGL
+from fontTools.misc.roundTools import otRound
 from ufoLib2 import Font
 from ufoLib2.objects import Anchor
 
@@ -40,7 +41,10 @@ def draw_path(pen, points):
         p1 = point_coord(start, "h2") if start["h2"].get("use", True) else p0
         p2 = point_coord(end, "h1") if end["h1"].get("use", True) else p3
         if p0 == p1 and p2 == p3:
-            if p0 != p3:
+            # Glyphr/Illustrator can leave sub-unit line fragments. Their
+            # endpoints become identical in the integer TrueType outline,
+            # creating zero-length segments in otherwise valid contours.
+            if p0 != p3 and tuple(map(otRound, p0)) != tuple(map(otRound, p3)):
                 pen.lineTo(p3)
         else:
             pen.curveTo(p1, p2, p3)

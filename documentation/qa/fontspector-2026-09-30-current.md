@@ -12,7 +12,7 @@ fontspector version: 1.8.0
 
 
 
-<details><summary>[10] /private/tmp/fluma-font-qa/final/fluma/Fluma-Regular.ttf</summary>
+<details><summary>[8] /private/tmp/fluma-font-qa/final/fluma/Fluma-Regular.ttf</summary>
 <div>
 
 
@@ -129,8 +129,8 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/3832]
 - ⚠️ **WARN** The most common width is 779 among a set of 9  math glyphs.
 The following math glyphs have a different width, though:
 width=702: greater
-width=792: equal
 width=677: logicalnot
+width=792: equal
 width=703: less
 width=662: divide [code: width-outliers]
 
@@ -190,12 +190,6 @@ Original proposal: [https://github.com/googlefonts/fontbakery/issues/4147]
 
 | Message                                                                  | Languages                    |
 |--------------------------------------------------------------------------|------------------------------|
-| Auxiliary orthography codepoints:                                        | * da_Latn (Danish)           |
-|   The following auxiliary characters are missing from the font: Ǿ        |                              |
-|   The following auxiliary characters are missing from the font: ǿ        |                              |
-| Auxiliary orthography codepoints:                                        | * ro_Latn (Romanian)         |
-|   The following auxiliary characters are missing from the font: Ţ        |                              |
-|   The following auxiliary characters are missing from the font: ţ        |                              |
 | Auxiliary orthography codepoints:                                        | * ca_Latn (Catalan)          |
 |   The following auxiliary characters are missing from the font: Ĭ        |                              |
 |   The following auxiliary characters are missing from the font: Ŀ        |                              |
@@ -207,6 +201,9 @@ Original proposal: [https://github.com/googlefonts/fontbakery/issues/4147]
 |   The following auxiliary characters are missing from the font: ŏ        |                              |
 |   The following auxiliary characters are missing from the font: ō        |                              |
 |   The following auxiliary characters are missing from the font: ŭ        |                              |
+| Auxiliary orthography codepoints:                                        | * ro_Latn (Romanian)         |
+|   The following auxiliary characters are missing from the font: Ţ        |                              |
+|   The following auxiliary characters are missing from the font: ţ        |                              |
 | Auxiliary orthography codepoints:                                        | * lt_Latn (Lithuanian)       |
 |   The following auxiliary characters are missing from the font: Ẽ        |                              |
 |   The following auxiliary characters are missing from the font: Ĩ        |                              |
@@ -246,42 +243,6 @@ Original proposal: [https://github.com/googlefonts/fontbakery/issues/4147]
 |   Shaper didn't attach tildecomb to uogonek when shaping the text 'ų̃'    |                              |
 |   Shaper didn't attach acutecomb to umacron when shaping the text 'ū́'    |                              |
 |   Shaper didn't attach tildecomb to umacron when shaping the text 'ū̃'    |                              |
-| Auxiliary orthography codepoints:                                        | * nb_Latn (Norwegian Bokmål) |
-|   The following auxiliary characters are missing from the font: Ǎ        |                              |
-|   The following auxiliary characters are missing from the font: Ŋ        |                              |
-|   The following auxiliary characters are missing from the font: Ŧ        |                              |
-|   The following auxiliary characters are missing from the font: ǎ        |                              |
-|   The following auxiliary characters are missing from the font: ŋ        |                              |
-|   The following auxiliary characters are missing from the font: ŧ        |                              |
-| Auxiliary orthography codepoints:                                        | * de_Latn (German)           |
-|   The following auxiliary characters are missing from the font: Ĭ        |                              |
-|   The following auxiliary characters are missing from the font: Ŏ        |                              |
-|   The following auxiliary characters are missing from the font: Ō        |                              |
-|   The following auxiliary characters are missing from the font: Ŭ        |                              |
-|   The following auxiliary characters are missing from the font: ĭ        |                              |
-|   The following auxiliary characters are missing from the font: ŏ        |                              |
-|   The following auxiliary characters are missing from the font: ō        |                              |
-|   The following auxiliary characters are missing from the font: ſ        |                              |
-|   The following auxiliary characters are missing from the font: ŭ        |                              |
-| Auxiliary orthography codepoints:                                        | * en_Latn (English)          |
-|   The following auxiliary characters are missing from the font: Ĭ        |                              |
-|   The following auxiliary characters are missing from the font: Ŏ        |                              |
-|   The following auxiliary characters are missing from the font: Ō        |                              |
-|   The following auxiliary characters are missing from the font: Ŭ        |                              |
-|   The following auxiliary characters are missing from the font: ĭ        |                              |
-|   The following auxiliary characters are missing from the font: ŏ        |                              |
-|   The following auxiliary characters are missing from the font: ō        |                              |
-|   The following auxiliary characters are missing from the font: ŭ        |                              |
-|   The following auxiliary characters are missing from the font: ʻ        |                              |
-| Auxiliary orthography codepoints:                                        | * cs_Latn (Czech)            |
-|   The following auxiliary characters are missing from the font: Ĭ        | * cy_Latn (Welsh)            |
-|   The following auxiliary characters are missing from the font: Ŏ        | * es_Latn (Spanish)          |
-|   The following auxiliary characters are missing from the font: Ō        | * hu_Latn (Hungarian)        |
-|   The following auxiliary characters are missing from the font: Ŭ        | * pt_Latn (Portuguese)       |
-|   The following auxiliary characters are missing from the font: ĭ        | * sk_Latn (Slovak)           |
-|   The following auxiliary characters are missing from the font: ŏ        | * tr_Latn (Turkish)          |
-|   The following auxiliary characters are missing from the font: ō        |                              |
-|   The following auxiliary characters are missing from the font: ŭ        |                              |
 | Auxiliary orthography codepoints:                                        | * fi_Latn (Finnish)          |
 |   The following auxiliary characters are missing from the font: Ǧ        |                              |
 |   The following auxiliary characters are missing from the font: Ǥ        |                              |
@@ -303,55 +264,54 @@ Original proposal: [https://github.com/googlefonts/fontbakery/issues/4147]
 |   The following auxiliary characters are missing from the font: ŧ        |                              |
 |   The following auxiliary characters are missing from the font: ʒ        |                              |
 |   The following auxiliary characters are missing from the font: ǯ        |                              |
-| Auxiliary orthography codepoints:                                        | * fr_Latn (French)           |
-|   The following auxiliary characters are missing from the font: Ǔ        |                              |
-|   The following auxiliary characters are missing from the font: ſ        |                              |
-|   The following auxiliary characters are missing from the font: ǔ        |                              |
+| Auxiliary orthography codepoints:                                        | * nb_Latn (Norwegian Bokmål) |
+|   The following auxiliary characters are missing from the font: Ǎ        |                              |
+|   The following auxiliary characters are missing from the font: Ŋ        |                              |
+|   The following auxiliary characters are missing from the font: Ŧ        |                              |
+|   The following auxiliary characters are missing from the font: ǎ        |                              |
+|   The following auxiliary characters are missing from the font: ŋ        |                              |
+|   The following auxiliary characters are missing from the font: ŧ        |                              |
 | Auxiliary orthography codepoints:                                        | * lv_Latn (Latvian)          |
 |   The following auxiliary characters are missing from the font: Ō        |                              |
 |   The following auxiliary characters are missing from the font: Ŗ        |                              |
 |   The following auxiliary characters are missing from the font: ō        |                              |
-|   The following auxiliary characters are missing from the font: ŗ        |                              | [code: warning-language-shaping]
-
-
-
-</div>
-</details>
-
-
-
-
-
-<details>
-    <summary>⚠️ <b>WARN</b> Do any segments have colinear vectors? (outline_colinear_vectors)</summary>
-    <div>
-
-
-> This check looks for consecutive line segments which have the same angle. This normally happens if an outline point has been added by accident.
->
-> This check is not run for variable fonts, as they may legitimately have colinear vectors.
-
-
-
-
-Original proposal: [https://github.com/fonttools/fontbakery/pull/3088]
-
-
-
-
-
-- ⚠️ **WARN** The following glyphs have colinear vectors:
-
-* E (U+0045): from (395.0, 167.0) to (396.0, 167.0) is colinear with segment from (396.0, 167.0) to (396.0, 167.0)
-* V (U+0056): from (994.0, 1458.0) to (995.0, 1458.0) is colinear with segment from (995.0, 1458.0) to (995.0, 1458.0)
-* a (U+0061): from (385.0, 608.0) to (385.0, 608.0) is colinear with segment from (385.0, 608.0) to (385.0, 608.0)
-* w (U+0077): from (849.0, 965.0) to (850.0, 965.0) is colinear with segment from (850.0, 965.0) to (850.0, 965.0)
-* zero (U+0030): from (669.0, 231.0) to (670.0, 231.0) is colinear with segment from (670.0, 231.0) to (670.0, 231.0)
-* four (U+0034): from (865.0, 611.0) to (866.0, 611.0) is colinear with segment from (866.0, 611.0) to (866.0, 611.0)
-* numbersign (U+0023): from (628.0, 580.0) to (628.0, 580.0) is colinear with segment from (628.0, 580.0) to (628.0, 580.0)
-* dollar (U+0024): from (488.0, 311.0) to (489.0, 311.0) is colinear with segment from (489.0, 311.0) to (489.0, 311.0)
-* bracketleft (U+005B): from (343.0, 197.0) to (345.0, 197.0) is colinear with segment from (345.0, 197.0) to (345.0, 197.0)
-... and 40 others [code: found-colinear-vectors]
+|   The following auxiliary characters are missing from the font: ŗ        |                              |
+| Auxiliary orthography codepoints:                                        | * en_Latn (English)          |
+|   The following auxiliary characters are missing from the font: Ĭ        |                              |
+|   The following auxiliary characters are missing from the font: Ŏ        |                              |
+|   The following auxiliary characters are missing from the font: Ō        |                              |
+|   The following auxiliary characters are missing from the font: Ŭ        |                              |
+|   The following auxiliary characters are missing from the font: ĭ        |                              |
+|   The following auxiliary characters are missing from the font: ŏ        |                              |
+|   The following auxiliary characters are missing from the font: ō        |                              |
+|   The following auxiliary characters are missing from the font: ŭ        |                              |
+|   The following auxiliary characters are missing from the font: ʻ        |                              |
+| Auxiliary orthography codepoints:                                        | * cs_Latn (Czech)            |
+|   The following auxiliary characters are missing from the font: Ĭ        | * cy_Latn (Welsh)            |
+|   The following auxiliary characters are missing from the font: Ŏ        | * es_Latn (Spanish)          |
+|   The following auxiliary characters are missing from the font: Ō        | * hu_Latn (Hungarian)        |
+|   The following auxiliary characters are missing from the font: Ŭ        | * pt_Latn (Portuguese)       |
+|   The following auxiliary characters are missing from the font: ĭ        | * sk_Latn (Slovak)           |
+|   The following auxiliary characters are missing from the font: ŏ        | * tr_Latn (Turkish)          |
+|   The following auxiliary characters are missing from the font: ō        |                              |
+|   The following auxiliary characters are missing from the font: ŭ        |                              |
+| Auxiliary orthography codepoints:                                        | * de_Latn (German)           |
+|   The following auxiliary characters are missing from the font: Ĭ        |                              |
+|   The following auxiliary characters are missing from the font: Ŏ        |                              |
+|   The following auxiliary characters are missing from the font: Ō        |                              |
+|   The following auxiliary characters are missing from the font: Ŭ        |                              |
+|   The following auxiliary characters are missing from the font: ĭ        |                              |
+|   The following auxiliary characters are missing from the font: ŏ        |                              |
+|   The following auxiliary characters are missing from the font: ō        |                              |
+|   The following auxiliary characters are missing from the font: ſ        |                              |
+|   The following auxiliary characters are missing from the font: ŭ        |                              |
+| Auxiliary orthography codepoints:                                        | * da_Latn (Danish)           |
+|   The following auxiliary characters are missing from the font: Ǿ        |                              |
+|   The following auxiliary characters are missing from the font: ǿ        |                              |
+| Auxiliary orthography codepoints:                                        | * fr_Latn (French)           |
+|   The following auxiliary characters are missing from the font: Ǔ        |                              |
+|   The following auxiliary characters are missing from the font: ſ        |                              |
+|   The following auxiliary characters are missing from the font: ǔ        |                              | [code: warning-language-shaping]
 
 
 
@@ -382,46 +342,6 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/3064]
 
 * hungarumlaut (U+02DD): Line(Line { p0: (131.0, 1180.0), p1: (130.0, 1173.0) })/Quad(QuadBez { p0: (130.0, 1173.0), p1: (145.0, 1219.0), p2: (163.0, 1233.5) }) = 9.93036958204319 degrees
 * uni030B (U+030B): Line(Line { p0: (-25.0, 1180.0), p1: (-26.0, 1173.0) })/Quad(QuadBez { p0: (-26.0, 1173.0), p1: (-11.0, 1219.0), p2: (7.0, 1233.5) }) = 9.93036958204319 degrees [code: found-jaggy-segments]
-
-
-
-</div>
-</details>
-
-
-
-
-
-<details>
-    <summary>⚠️ <b>WARN</b> Check there are no overlapping path segments (overlapping_path_segments)</summary>
-    <div>
-
-
-> Some rasterizers encounter difficulties when rendering glyphs with overlapping path segments.
->
-> A path segment is a section of a path defined by two on-curve points. When two segments share the same coordinates, they are considered overlapping.
-
-
-
-
-Original proposal: [https://github.com/google/fonts/issues/7594#issuecomment-2401909084]
-
-
-
-
-
-- ⚠️ **WARN** The following glyphs have overlapping path segments:
-
-* a (U+0061): Line(Line { p0: (385.0, 608.0), p1: (385.0, 608.0) }) has the same coordinates as a previous segment.
-* numbersign (U+0023): Line(Line { p0: (628.0, 580.0), p1: (628.0, 580.0) }) has the same coordinates as a previous segment.
-* agrave (U+00E0): Line(Line { p0: (385.0, 608.0), p1: (385.0, 608.0) }) has the same coordinates as a previous segment.
-* aacute (U+00E1): Line(Line { p0: (385.0, 608.0), p1: (385.0, 608.0) }) has the same coordinates as a previous segment.
-* acircumflex (U+00E2): Line(Line { p0: (385.0, 608.0), p1: (385.0, 608.0) }) has the same coordinates as a previous segment.
-* atilde (U+00E3): Line(Line { p0: (385.0, 608.0), p1: (385.0, 608.0) }) has the same coordinates as a previous segment.
-* adieresis (U+00E4): Line(Line { p0: (385.0, 608.0), p1: (385.0, 608.0) }) has the same coordinates as a previous segment.
-* aring (U+00E5): Line(Line { p0: (385.0, 608.0), p1: (385.0, 608.0) }) has the same coordinates as a previous segment.
-* amacron (U+0101): Line(Line { p0: (385.0, 608.0), p1: (385.0, 608.0) }) has the same coordinates as a previous segment.
-... and 15 others [code: overlapping-path-segments]
 
 
 
@@ -527,13 +447,13 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/4097 and http
 - ⚠️ **WARN** /private/tmp/fluma-font-qa/final/fluma/Fluma-Regular.ttf: The following codepoints supported by the font are not covered by any subsets defined in the font's metadata file, and will never be served. You can solve this by either manually adding additional subset declarations to METADATA.pb, or by editing the glyphset definitions.
 
 * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
-* U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+* U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
 * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
-* U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, coptic, math, tifinagh
-* U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
-* U+0307 COMBINING DOT ABOVE: try adding one of: syriac, todhri, hebrew, coptic, old-permic, canadian-aboriginal, duployan, math, tai-le, malayalam, tifinagh
-* U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac
-* U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage
+* U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, tifinagh, coptic
+* U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic
+* U+0307 COMBINING DOT ABOVE: try adding one of: todhri, hebrew, math, tai-le, duployan, syriac, canadian-aboriginal, old-permic, malayalam, coptic, tifinagh
+* U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan
+* U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
 * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
 ... and 3 others
 
@@ -557,5 +477,5 @@ Or you can add the above codepoints to one of the subsets supported by the font:
 
 | ⚠️ WARN | ℹ️ INFO | ✅ PASS | ⏩ SKIP |
 | ---|---|---|---|
-| 14 | 8 | 105 | 81 |
-| 7% | 4% | 50% | 39% |
+| 12 | 8 | 107 | 81 |
+| 6% | 4% | 51% | 39% |

@@ -48,6 +48,7 @@ When you update your font (new version or new release), please report all notabl
 
 - Added Ĕ and corrected the previously empty ĕ; restored font license and name metadata.
 - Added source-driven UFO/TTF/OTF build, mark attachment, dotless i/j handling, and separator glyphs.
+- Removed sub-unit line fragments at UFO conversion when they would become zero-length in TTF outlines; the Google Fonts Fontspector profile now reports 0 FAIL and 12 WARN.
 - Added all 22 original specimen images, a browsable gallery, and their separate image license.
 
 **15 September 2026. Version 1.000 source milestone**

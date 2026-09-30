@@ -1,8 +1,8 @@
 # Fluma Fontspector warning review, 2026-09-30
 
-Fontspector 1.8.0 ran 203 checks with the `googlefonts` profile on the current TTF with network access: 105 PASS, 14 WARN, 0 FAIL, 0 ERROR, 0 FATAL, 81 SKIP, 8 INFO. The 14 WARN results come from 11 check types; four are individual caron glyph notices. The [complete tool output](fontspector-2026-09-30-current.md) has glyph coordinates and the full language table.
+Fontspector 1.8.0 ran 203 checks with the `googlefonts` profile on the current TTF with network access: 107 PASS, 12 WARN, 0 FAIL, 0 ERROR, 0 FATAL, 81 SKIP, 8 INFO. The 12 WARN results come from 9 check types; four are individual caron glyph notices. The [complete tool output](fontspector-2026-09-30-current.md) has glyph coordinates and the full language table.
 
-The previous build had 16 WARN. A reproducible finalization step added an upright static STAT table and Latin `meta` ScriptLangTags to TTF and OTF, resolving two notices. These tables are carried into WOFF and WOFF2. Outlines, advances, cmap, and OpenType positioning/substitution tables are byte-identical to the previous TTF build.
+The first reproducible build had 16 WARN. A finalization step added an upright static STAT table and Latin `meta` ScriptLangTags to TTF and OTF, resolving two notices. A later source-to-UFO conversion fix omitted only line fragments whose two endpoints round to the same TrueType integer coordinate, resolving `outline_colinear_vectors` and `overlapping_path_segments`. Against the preceding 14-WARN TTF, all on-curve contour points, advances, cmap, GDEF, GPOS, GSUB, name, STAT, and meta are unchanged. Five glyphs have a total of six off-curve control points shifted by one unit after cubic-to-quadratic conversion; this is less than 0.05% of the 2048-unit em. The build is byte-identical on repetition. The GS2 design source was not edited by this cleanup.
 
 | Warning | Count | Assessment and next step |
 | --- | ---: | --- |
@@ -12,9 +12,7 @@ The previous build had 16 WARN. A reproducible finalization step added an uprigh
 | `math_signs_width` | 1 | Equal, less, greater, logicalnot, and divide differ from the most common math-sign advance (779 units). Width normalization would change the design's spacing and requires a design decision. |
 | `rupee` | 1 | U+20B9 is absent. Fluma is a Latin display font, not an Indic font. This character is not in GF Latin Core. Add it only if expanding the character set intentionally. |
 | `googlefonts/glyphsets/shape_languages` | 1 | The heuristic reports missing auxiliary characters in several Latin languages and mark attachment failures for some stacked Lithuanian combinations. The GF Latin Core codepoints are complete, but this is a real limit on broader language claims. Do not claim complete support for those auxiliary orthographies; expand and proof marks before such a claim. |
-| `outline_colinear_vectors` | 1 | Several compiled contours contain colinear or zero-length segments, including E, V, a, w, zero, and four. These merit source-level outline review. Mechanical coordinate edits could alter the handwritten shapes, so this was not silently changed. |
 | `outline_jaggy_segments` | 1 | The two related double-acute glyphs have a sharp transition near the same source outline. Inspect and smooth deliberately in the GS2 source if visually undesirable. |
-| `overlapping_path_segments` | 1 | Zero-length repeated path segments were detected in a and numbersign and their accented derivatives. Review the source paths and compiled results; this is a rendering quality risk in some rasterizers. |
 | `googlefonts/gasp` | 1 | Fontspector asks for all four flags (0x000F), while the [Google Fonts static guide](https://googlefonts.github.io/gf-guide/statics.html) explicitly recommends 0x000A across all sizes for an unhinted static display face. Fluma follows the latter. Flag the conflict during onboarding. |
 | `googlefonts/vendor_id` | 1 | The vendor ID is `NONE`. A unique registered Microsoft vendor ID has not been supplied. It is not a Google Fonts FAIL; registration is optional. Do not invent a registered ID. |
 
