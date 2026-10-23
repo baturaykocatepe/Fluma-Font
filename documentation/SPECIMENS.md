@@ -4,39 +4,39 @@ These are the 22 current specimen exports supplied by Baturay Kocatepe, last upd
 
 ## Specimen 01
 
-![Fluma specimen 01](article/specimen1.png)
+![Fluma specimen 01](article/specimen01.png)
 
 ## Specimen 02
 
-![Fluma specimen 02](article/specimen2.png)
+![Fluma specimen 02](article/specimen02.png)
 
 ## Specimen 03
 
-![Fluma specimen 03](article/specimen3.png)
+![Fluma specimen 03](article/specimen03.png)
 
 ## Specimen 04
 
-![Fluma specimen 04](article/specimen4.png)
+![Fluma specimen 04](article/specimen04.png)
 
 ## Specimen 05
 
-![Fluma specimen 05](article/specimen5.png)
+![Fluma specimen 05](article/specimen05.png)
 
 ## Specimen 06
 
-![Fluma specimen 06](article/specimen6.png)
+![Fluma specimen 06](article/specimen06.png)
 
 ## Specimen 07
 
-![Fluma specimen 07](article/specimen7.png)
+![Fluma specimen 07](article/specimen07.png)
 
 ## Specimen 08
 
-![Fluma specimen 08](article/specimen8.png)
+![Fluma specimen 08](article/specimen08.png)
 
 ## Specimen 09
 
-![Fluma specimen 09](article/specimen9.png)
+![Fluma specimen 09](article/specimen09.png)
 
 ## Specimen 10
 

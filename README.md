@@ -2,19 +2,33 @@
 
 Fluma is a liquid organic display typeface with soft, tapering forms. It is intended for headlines, branding, and other display settings. The font covers GF Latin Core, including Turkish (Ç ç Ğ ğ İ ı Ö ö Ş ş Ü ü).
 
-![Fluma specimen cover](documentation/article/specimen1.png)
+![Fluma specimen cover](documentation/article/specimen01.png)
 
 ## Design
 
 Fluma explores how flow and organic growth can shape a display alphabet. Its letters swell, taper, and settle, with rounded volumes meeting finer connections. At large sizes, these contrasts give short words a warm, expressive rhythm.
 
-![Fluma uppercase and lowercase letterform comparison](documentation/article/specimen20.png)
+![Fluma form language shown through selected letterforms](documentation/article/specimen06.png)
+
+![Fluma glyph details and source metrics](documentation/article/specimen07.png)
+
+![Fluma swell, taper, bend, and settle form behavior](documentation/article/specimen08.png)
 
 ## About
 
 Fluma is designed by Baturay Kocatepe. All 22 current specimen pages appear in sequence in the [specimen gallery](documentation/SPECIMENS.md) and the [article](documentation/article/ARTICLE.en_us.html). The images have a [separate license](documentation/image-license.txt).
 
 Baturay Kocatepe directed the typeface and states that he is its sole copyright holder. The project history records use of GPT Image for an early character sheet, Illustrator Image Trace for vectorization, and Adobe Firefly for some later character references; the resulting shapes were developed in Glyphr Studio. Claude Code assisted with construction of some Turkish and missing Latin characters in the GS2 source. Codex assisted with source corrections, the UFO conversion, OpenType feature generation, and technical QA. This AI-assisted production history is disclosed for review; the editable source and build tools are included.
+
+![Fluma typeface development from character exploration to the Regular font](documentation/article/specimen12.png)
+
+## Letterforms and character coverage
+
+The following sheets compare uppercase and lowercase forms and summarize the Regular style's Latin character coverage, including Turkish.
+
+![Fluma uppercase and lowercase letterform comparison](documentation/article/specimen20.png)
+
+![Fluma Regular specifications and Turkish character sample](documentation/article/specimen21.png)
 
 ## Building
 
@@ -50,9 +64,11 @@ bash sources/build.sh
 When you update your font (new version or new release), please report all notable changes here, with a date.
 [Font Versioning](https://github.com/googlefonts/gf-docs/tree/main/Spec#font-versioning) is based on semver.
 
-**24 October 2026. Specimen page 20 correction (font remains Version 1.000)**
+**24 October 2026. Specimen and documentation updates (font remains Version 1.000)**
 
 - Replaced page 20 with the designer's corrected image. Its lower-right caption now reads “COMPARISON”. Font sources and binaries were not changed.
+- Replaced pages 07 and 19 with the designer's revised images. Page 07 now shows the source ascender and descender values (1840 and -840), and page 19's lower-right caption reads “TITLE EXPLORATION”.
+- Zero-padded image filenames for pages 01-09 so file listings sort in specimen order, and updated the article, gallery, and README references. Added selected pages 06, 07, 08, 12, and 21 to the README alongside pages 01 and 20. All 22 pages remain in the article and gallery.
 
 **23 October 2026. Specimen update (font remains Version 1.000)**
 
