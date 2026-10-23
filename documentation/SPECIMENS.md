@@ -82,11 +82,13 @@ These are the 22 current specimen exports supplied by Baturay Kocatepe and updat
 
 ![Fluma specimen 20](article/specimen20.png)
 
+The lower-right caption still reads “CAE COMPARISON” in the supplied artwork. The intended wording appears to be “CASE COMPARISON”; this remains an editorial correction for the designer.
+
 ## Specimen 21
 
 ![Fluma specimen 21](article/specimen21.png)
 
-This page still shows the earlier 334-character export count. The current font maps 337 Unicode codepoints; see the [technical readiness report](TECHNICAL_READINESS-2026-09-30.md). The embedded designer credit is part of the supplied artwork and is pending an editorial correction.
+This updated page reports 337 encoded characters, matching the current font's 337 Unicode codepoints; see the [technical readiness report](TECHNICAL_READINESS-2026-09-30.md).
 
 ## Specimen 22
 

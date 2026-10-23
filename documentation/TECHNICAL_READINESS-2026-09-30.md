@@ -1,6 +1,6 @@
 # FlumaFont technical readiness, 2026-09-30
 
-> **Specimen update, 2026-10-23:** The designer replaced all 22 PNGs in `documentation/article/` with revised 1600 × 900 exports. The font source, binaries, and September QA results did not change. The specimen observations below document the September originals. In the revised set, credits were removed from pages 1, 12, and 22; page 21 still shows the earlier 334 count and an embedded credit, page 19 still says “In Packaging,” and page 20 still says “CAE.” See the [current gallery](SPECIMENS.md).
+> **Specimen update, 2026-10-23:** The designer replaced all 22 PNGs in `documentation/article/` with revised 1600 × 900 exports, then supplied further replacements for pages 19, 20, and 21. The font source, binaries, and September QA results did not change. The specimen observations below document the September originals. In the current set, page 19's top-right label is “Fluma / Regular” and page 21 reports 337 encoded characters with no embedded designer credit. Page 20's lower-right caption still says “CAE COMPARISON.” See the [current gallery](SPECIMENS.md).
 
 ## Verified package
 
