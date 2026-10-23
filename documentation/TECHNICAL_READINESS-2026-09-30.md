@@ -1,5 +1,7 @@
 # FlumaFont technical readiness, 2026-09-30
 
+> **Specimen update, 2026-10-23:** The designer replaced all 22 PNGs in `documentation/article/` with revised 1600 × 900 exports. The font source, binaries, and September QA results did not change. The specimen observations below document the September originals. In the revised set, credits were removed from pages 1, 12, and 22; page 21 still shows the earlier 334 count and an embedded credit, page 19 still says “In Packaging,” and page 20 still says “CAE.” See the [current gallery](SPECIMENS.md).
+
 ## Verified package
 
 The canonical editable source is `sources/Fluma.gs2`. `sources/build.sh` converts it to `sources/Fluma.ufo` and builds `fonts/ttf/Fluma-Regular.ttf` and `fonts/otf/Fluma-Regular.otf`. Its finalization step adds a static upright STAT axis and Latin `meta` tags. Python dependencies are listed in `requirements.txt`. Two consecutive builds produced byte-identical TTF, OTF, WOFF, and WOFF2 files with the build date pinned to 2026-09-30 UTC. The converter now omits sub-unit line fragments that become zero-length when compiled to integer TrueType coordinates. Relative to the preceding 14-WARN TTF, all on-curve points and the cmap, hmtx, GDEF, GPOS, GSUB, name, STAT, and meta tables remain identical; six off-curve points in five glyphs shift by one unit. The GS2 design source was unchanged by this cleanup.

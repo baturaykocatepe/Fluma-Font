@@ -1,6 +1,6 @@
 # Fluma specimen gallery
 
-These are the 22 original specimen exports supplied by Baturay Kocatepe. Image license: [CC BY-SA 4.0](image-license.txt).
+These are the 22 current specimen exports supplied by Baturay Kocatepe and updated on 23 October 2026. Image license: [CC BY-SA 4.0](image-license.txt).
 
 ## Specimen 01
 
@@ -86,7 +86,7 @@ These are the 22 original specimen exports supplied by Baturay Kocatepe. Image l
 
 ![Fluma specimen 21](article/specimen21.png)
 
-This image records the original 334-character export. The current rebuilt font maps 337 Unicode codepoints. The image is retained unchanged as part of the original specimen series.
+This page still shows the earlier 334-character export count. The current font maps 337 Unicode codepoints; see the [technical readiness report](TECHNICAL_READINESS-2026-09-30.md). The embedded designer credit is part of the supplied artwork and is pending an editorial correction.
 
 ## Specimen 22
 

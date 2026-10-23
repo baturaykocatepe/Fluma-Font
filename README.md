@@ -6,7 +6,7 @@ Fluma is a liquid organic display typeface with soft, tapering forms. It is inte
 
 ## About
 
-Fluma is designed by Baturay Kocatepe. All 22 original exports appear in sequence in the [specimen gallery](documentation/SPECIMENS.md) and the [article](documentation/article/ARTICLE.en_us.html). The images have a [separate license](documentation/image-license.txt).
+Fluma is designed by Baturay Kocatepe. All 22 current specimen pages appear in sequence in the [specimen gallery](documentation/SPECIMENS.md) and the [article](documentation/article/ARTICLE.en_us.html). The images have a [separate license](documentation/image-license.txt).
 
 Baturay Kocatepe directed the typeface and states that he is its sole copyright holder. The project history records use of GPT Image for an early character sheet, Illustrator Image Trace for vectorization, and Adobe Firefly for some later character references; the resulting shapes were developed in Glyphr Studio. Claude Code assisted with construction of some Turkish and missing Latin characters in the GS2 source. Codex assisted with source corrections, the UFO conversion, OpenType feature generation, and technical QA. This AI-assisted production history is disclosed for review; the editable source and build tools are included.
 
@@ -43,6 +43,10 @@ bash sources/build.sh
 
 When you update your font (new version or new release), please report all notable changes here, with a date.
 [Font Versioning](https://github.com/googlefonts/gf-docs/tree/main/Spec#font-versioning) is based on semver.
+
+**23 October 2026. Specimen update (font remains Version 1.000)**
+
+- Replaced all 22 specimen PNGs with the designer's revised exports. Font sources and binaries were not changed.
 
 **30 September 2026. Version 1.000 build update**
 
