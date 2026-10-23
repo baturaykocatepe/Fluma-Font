@@ -4,6 +4,12 @@ Fluma is a liquid organic display typeface with soft, tapering forms. It is inte
 
 ![Fluma specimen cover](documentation/article/specimen1.png)
 
+## Design
+
+Fluma explores how flow and organic growth can shape a display alphabet. Its letters swell, taper, and settle, with rounded volumes meeting finer connections. At large sizes, these contrasts give short words a warm, expressive rhythm.
+
+![Fluma uppercase and lowercase letterform comparison](documentation/article/specimen20.png)
+
 ## About
 
 Fluma is designed by Baturay Kocatepe. All 22 current specimen pages appear in sequence in the [specimen gallery](documentation/SPECIMENS.md) and the [article](documentation/article/ARTICLE.en_us.html). The images have a [separate license](documentation/image-license.txt).
