@@ -44,10 +44,14 @@ bash sources/build.sh
 When you update your font (new version or new release), please report all notable changes here, with a date.
 [Font Versioning](https://github.com/googlefonts/gf-docs/tree/main/Spec#font-versioning) is based on semver.
 
+**24 October 2026. Specimen page 20 correction (font remains Version 1.000)**
+
+- Replaced page 20 with the designer's corrected image. Its lower-right caption now reads “COMPARISON”. Font sources and binaries were not changed.
+
 **23 October 2026. Specimen update (font remains Version 1.000)**
 
 - Replaced all 22 specimen PNGs with the designer's revised exports. Font sources and binaries were not changed.
-- Replaced pages 19, 20, and 21 again with later designer revisions. Page 20's lower-right caption still contains a documented typo; see the [gallery](documentation/SPECIMENS.md).
+- Replaced pages 19, 20, and 21 again with later designer revisions. The remaining page 20 caption error was corrected on 24 October.
 
 **30 September 2026. Version 1.000 build update**
 

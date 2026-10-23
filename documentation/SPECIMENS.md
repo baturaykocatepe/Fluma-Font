@@ -1,6 +1,6 @@
 # Fluma specimen gallery
 
-These are the 22 current specimen exports supplied by Baturay Kocatepe and updated on 23 October 2026. Image license: [CC BY-SA 4.0](image-license.txt).
+These are the 22 current specimen exports supplied by Baturay Kocatepe, last updated on 24 October 2026. Image license: [CC BY-SA 4.0](image-license.txt).
 
 ## Specimen 01
 
@@ -82,7 +82,7 @@ These are the 22 current specimen exports supplied by Baturay Kocatepe and updat
 
 ![Fluma specimen 20](article/specimen20.png)
 
-The lower-right caption still reads “CAE COMPARISON” in the supplied artwork. The intended wording appears to be “CASE COMPARISON”; this remains an editorial correction for the designer.
+The revised lower-right caption reads “COMPARISON”.
 
 ## Specimen 21
 
