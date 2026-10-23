@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://baturaykocatepe.github.io/Fluma-Font/sitemap.xml

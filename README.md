@@ -4,6 +4,13 @@ Fluma is a liquid organic display typeface with soft, tapering forms. It is inte
 
 ![Fluma specimen cover](documentation/article/specimen01.png)
 
+## Try and download
+
+- [Explore Fluma and try the typeface](https://baturaykocatepe.github.io/Fluma-Font/)
+- [Download Fluma Regular 1.000](https://github.com/baturaykocatepe/Fluma-Font/releases/latest/download/Fluma-1.000.zip) (TTF, OTF, WOFF, WOFF2, and OFL license)
+
+The font is open source under the SIL Open Font License 1.1. The specimen images have a [separate CC BY-SA 4.0 license](documentation/image-license.txt). The Google Fonts [submission](https://github.com/google/fonts/issues/11060) is under review; this independent release is available now.
+
 ## Design
 
 Fluma explores how flow and organic growth can shape a display alphabet. Its letters swell, taper, and settle, with rounded volumes meeting finer connections. At large sizes, these contrasts give short words a warm, expressive rhythm.
@@ -63,6 +70,11 @@ bash sources/build.sh
 
 When you update your font (new version or new release), please report all notable changes here, with a date.
 [Font Versioning](https://github.com/googlefonts/gf-docs/tree/main/Spec#font-versioning) is based on semver.
+
+**24 October 2026. Public download and typeface website (font remains Version 1.000)**
+
+- Published a GitHub Release containing the existing canonical TTF, OTF, WOFF, and WOFF2 binaries with the OFL license.
+- Added a simple GitHub Pages site with a live Fluma type tester, selected specimens, and a direct download link. Font sources and binaries were not changed.
 
 **24 October 2026. Specimen and documentation updates (font remains Version 1.000)**
 
