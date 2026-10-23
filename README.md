@@ -47,6 +47,7 @@ When you update your font (new version or new release), please report all notabl
 **23 October 2026. Specimen update (font remains Version 1.000)**
 
 - Replaced all 22 specimen PNGs with the designer's revised exports. Font sources and binaries were not changed.
+- Replaced pages 19, 20, and 21 again with later designer revisions. Page 20's lower-right caption still contains a documented typo; see the [gallery](documentation/SPECIMENS.md).
 
 **30 September 2026. Version 1.000 build update**
 
