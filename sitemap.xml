@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://baturaykocatepe.github.io/Fluma-Font/</loc>
+    <image:image><image:loc>https://baturaykocatepe.github.io/Fluma-Font/documentation/article/specimen01.png</image:loc></image:image>
+    <image:image><image:loc>https://baturaykocatepe.github.io/Fluma-Font/documentation/article/specimen02.png</image:loc></image:image>
+    <image:image><image:loc>https://baturaykocatepe.github.io/Fluma-Font/documentation/article/specimen03.png</image:loc></image:image>
+    <image:image><image:loc>https://baturaykocatepe.github.io/Fluma-Font/documentation/article/specimen04.png</image:loc></image:image>
+    <image:image><image:loc>https://baturaykocatepe.github.io/Fluma-Font/documentation/article/specimen05.png</image:loc></image:image>
+    <image:image><image:loc>https://baturaykocatepe.github.io/Fluma-Font/documentation/article/specimen06.png</image:loc></image:image>
+    <image:image><image:loc>https://baturaykocatepe.github.io/Fluma-Font/documentation/article/specimen07.png</image:loc></image:image>
+    <image:image><image:loc>https://baturaykocatepe.github.io/Fluma-Font/documentation/article/specimen08.png</image:loc></image:image>
+    <image:image><image:loc>https://baturaykocatepe.github.io/Fluma-Font/documentation/article/specimen09.png</image:loc></image:image>
+    <image:image><image:loc>https://baturaykocatepe.github.io/Fluma-Font/documentation/article/specimen10.png</image:loc></image:image>
+    <image:image><image:loc>https://baturaykocatepe.github.io/Fluma-Font/documentation/article/specimen11.png</image:loc></image:image>
+    <image:image><image:loc>https://baturaykocatepe.github.io/Fluma-Font/documentation/article/specimen12.png</image:loc></image:image>
+    <image:image><image:loc>https://baturaykocatepe.github.io/Fluma-Font/documentation/article/specimen13.png</image:loc></image:image>
+    <image:image><image:loc>https://baturaykocatepe.github.io/Fluma-Font/documentation/article/specimen14.png</image:loc></image:image>
+    <image:image><image:loc>https://baturaykocatepe.github.io/Fluma-Font/documentation/article/specimen15.png</image:loc></image:image>
+    <image:image><image:loc>https://baturaykocatepe.github.io/Fluma-Font/documentation/article/specimen16.png</image:loc></image:image>
+    <image:image><image:loc>https://baturaykocatepe.github.io/Fluma-Font/documentation/article/specimen17.png</image:loc></image:image>
+    <image:image><image:loc>https://baturaykocatepe.github.io/Fluma-Font/documentation/article/specimen18.png</image:loc></image:image>
+    <image:image><image:loc>https://baturaykocatepe.github.io/Fluma-Font/documentation/article/specimen19.png</image:loc></image:image>
+    <image:image><image:loc>https://baturaykocatepe.github.io/Fluma-Font/documentation/article/specimen20.png</image:loc></image:image>
+    <image:image><image:loc>https://baturaykocatepe.github.io/Fluma-Font/documentation/article/specimen21.png</image:loc></image:image>
+    <image:image><image:loc>https://baturaykocatepe.github.io/Fluma-Font/documentation/article/specimen22.png</image:loc></image:image>
   </url>
 </urlset>
