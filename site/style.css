@@ -208,14 +208,28 @@ dialog::backdrop { background: rgba(33, 29, 26, .76); backdrop-filter: blur(5px)
   .brand img { width: 112px; }
   .header-actions .pill { min-height: 38px; padding: 8px 10px; font-size: 10px; }
   .header-source svg { width: 13px; height: 13px; }
-  .hero { padding-top: 18px; }
+  .hero { padding-top: 18px; padding-bottom: 44px; }
+  .statement { padding-block: 54px; }
+  .showcase { padding-block: 56px; }
+  .forms { padding-block: 56px; }
+  .pair-section { padding-block: 56px; }
+  .tester { padding-block: 56px; }
+  .feature-section { padding-block: 56px; }
+  .specimens { padding-block: 56px; }
+  .download { padding-top: 64px; padding-bottom: 28px; }
+  .site-footer { padding-top: 56px; }
+  .eyebrow { margin-bottom: 16px; }
+  .section-top { gap: 18px; margin-bottom: 26px; }
   .hero-art, .forms-art, .pair-grid a, .feature-art, .specimen-grid a { border-radius: 26px; }
   main section h2 { font-size: clamp(48px, 12vw, 68px); }
   .statement h2 em { font-size: 1.17em; }
-  .statement-copy { margin-top: 34px; }
+  .statement-copy { margin-top: 24px; }
   .showcase-card { flex-basis: 86vw; }
   .showcase-card span { padding: 12px 14px; font-size: 12px; }
   .showcase-track { gap: 16px; }
+  .showcase-hint { margin-top: 12px; }
+  .forms-inner { gap: 26px; }
+  .forms-copy p:not(.eyebrow) { margin-top: 24px; }
   .tester-panel { border-radius: 26px; }
   .tester-toolbar { align-items: flex-start; flex-direction: column; }
   .size-control { width: 100%; grid-template-columns: auto auto 1fr; }
@@ -224,9 +238,10 @@ dialog::backdrop { background: rgba(33, 29, 26, .76); backdrop-filter: blur(5px)
   .tester-note { align-items: flex-start; flex-direction: column; gap: 5px; }
   .download h2 { font-size: clamp(62px, 14.6vw, 88px); }
   .download-button { width: 100%; justify-content: space-between; font-size: 11px; }
+  .license-note { margin-top: 56px; }
   .footer-columns { gap: 18px; }
   .footer-social h2 { white-space: normal; }
-  .footer-signature { margin-top: 80px; }
+  .footer-signature { margin-top: 56px; }
   .footer-bottom { align-items: flex-start; flex-direction: column; }
   .back-top { right: 8px; width: 44px; height: 44px; }
 }
