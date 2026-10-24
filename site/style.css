@@ -84,9 +84,9 @@ h2 em { color: var(--coral); font-family: FLUMA, sans-serif; font-style: normal;
 .carousel-controls { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
 .carousel-count { font-size: 13px; font-weight: 500; letter-spacing: .12em; }
 .carousel-arrows { display: flex; gap: 10px; }
-.showcase-track { display: flex; gap: 24px; padding: 2px 4px 14px 2px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: thin; scrollbar-color: var(--coral) transparent; }
-.showcase-card { flex: 0 0 min(600px, 56vw); overflow: hidden; scroll-snap-align: start; border: 1px solid var(--ink); border-radius: 36px; background: var(--white); text-decoration: none; transition: transform .22s ease; }
-.showcase-card:hover { transform: translateY(-4px); }
+.showcase-track { display: flex; gap: 24px; padding: 8px 8px 14px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: thin; scrollbar-color: var(--coral) transparent; }
+.showcase-card { flex: 0 0 min(600px, 56vw); overflow: hidden; scroll-snap-align: start; border: 1px solid var(--ink); border-radius: 36px; background: var(--white); text-decoration: none; transition: border-color .22s ease, background .22s ease; }
+.showcase-card:hover, .showcase-card:focus-visible { border-color: var(--coral); background: var(--cream); }
 .showcase-card img { width: 100%; height: auto; }
 .showcase-card span { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 15px 20px; border-top: 1px solid var(--ink); font-size: 13px; font-weight: 500; }
 .showcase-hint { margin: 18px 0 0; font-size: 12px; font-weight: 400; }
@@ -146,7 +146,11 @@ h2 em { color: var(--coral); font-family: FLUMA, sans-serif; font-style: normal;
 .footer-columns h2 { margin: 0 0 8px; font-size: 11px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; }
 .footer-columns a { font-size: 13px; font-weight: 400; line-height: 1.5; text-decoration: none; }
 .footer-columns a:hover, .footer-bottom a:hover { color: var(--coral); }
-.footer-columns a span { margin-left: 4px; }
+.footer-columns .footer-social { align-items: stretch; gap: 10px; min-width: 0; }
+.footer-social h2 { margin-bottom: 13px; white-space: nowrap; }
+.footer-columns .footer-social a { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 44px; padding: 10px 15px; border: 1px solid var(--ink); border-radius: 999px; background: var(--white); font-size: 13px; font-weight: 500; transition: border-color .2s ease, background .2s ease, color .2s ease; }
+.footer-columns .footer-social a:hover, .footer-columns .footer-social a:focus-visible { border-color: var(--coral); background: var(--coral); color: var(--ink); }
+.footer-social svg { width: 16px; height: 16px; }
 .footer-signature { width: 100%; margin: clamp(84px, 10vw, 150px) auto 26px; }
 .footer-signature img { display: block; width: 100%; height: auto; }
 .footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 18px; padding-top: 22px; border-top: 1px solid var(--ink); font-size: 11px; font-weight: 400; }
@@ -221,6 +225,7 @@ dialog::backdrop { background: rgba(33, 29, 26, .76); backdrop-filter: blur(5px)
   .download h2 { font-size: clamp(62px, 14.6vw, 88px); }
   .download-button { width: 100%; justify-content: space-between; font-size: 11px; }
   .footer-columns { gap: 18px; }
+  .footer-social h2 { white-space: normal; }
   .footer-signature { margin-top: 80px; }
   .footer-bottom { align-items: flex-start; flex-direction: column; }
   .back-top { right: 8px; width: 44px; height: 44px; }
