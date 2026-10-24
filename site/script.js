@@ -1,11 +1,3 @@
-const sampleText = document.querySelector('#sample-text');
-const fontSize = document.querySelector('#font-size');
-const sizeOutput = document.querySelector('#size-output');
-const track = document.querySelector('#showcase-track');
-const cards = [...track.querySelectorAll('.showcase-card')];
-const count = document.querySelector('#carousel-count');
-const previous = document.querySelector('#carousel-prev');
-const next = document.querySelector('#carousel-next');
 const menuToggle = document.querySelector('.menu-toggle');
 const siteNav = document.querySelector('#site-nav');
 function closeMenu() {
@@ -20,30 +12,56 @@ menuToggle.addEventListener('click', () => {
   siteNav.classList.toggle('open', open);
 });
 siteNav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
-document.querySelectorAll('.brand, .header-cta').forEach(link => link.addEventListener('click', closeMenu));
+document.querySelectorAll('.brand, .header-actions a').forEach(link => link.addEventListener('click', closeMenu));
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape' && siteNav.classList.contains('open')) {
     closeMenu();
     menuToggle.focus();
   }
 });
-let sizeTouched = false;
-if (window.innerWidth < 500) fontSize.value = '64';
 
+document.querySelector('.back-top').addEventListener('click', () => {
+  closeMenu();
+  window.scrollTo({ top: 0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+});
+
+const sampleText = document.querySelector('#sample-text');
+const fontSize = document.querySelector('#font-size');
+const sizeOutput = document.querySelector('#size-output');
+let sizeTouched = false;
+if (window.innerWidth < 500) fontSize.value = '60';
 function updateSize() {
   const size = Number(fontSize.value);
   sampleText.style.fontSize = size + 'px';
   sizeOutput.value = size + ' px';
 }
 fontSize.addEventListener('input', () => { sizeTouched = true; updateSize(); });
-document.querySelectorAll('[data-sample]').forEach(button => {
-  button.addEventListener('click', () => {
-    sampleText.value = button.dataset.sample;
-    sampleText.focus();
-  });
-});
+const sampleButtons = [...document.querySelectorAll('[data-sample]')];
+function updateSelectedSample() {
+  sampleButtons.forEach(button => button.setAttribute('aria-pressed', String(sampleText.value === button.dataset.sample)));
+}
+sampleButtons.forEach(button => button.addEventListener('click', () => {
+  sampleText.value = button.dataset.sample;
+  updateSelectedSample();
+  sampleText.focus();
+  sampleText.setSelectionRange(0, 0);
+  sampleText.scrollTop = 0;
+}));
+sampleText.addEventListener('input', updateSelectedSample);
 updateSize();
+updateSelectedSample();
+window.addEventListener('resize', () => {
+  if (!sizeTouched) {
+    fontSize.value = window.innerWidth < 500 ? '60' : '96';
+    updateSize();
+  }
+});
 
+const track = document.querySelector('#showcase-track');
+const cards = [...track.querySelectorAll('.showcase-card')];
+const count = document.querySelector('#carousel-count');
+const previous = document.querySelector('#carousel-prev');
+const next = document.querySelector('#carousel-next');
 function currentCardIndex() {
   const left = track.scrollLeft;
   let best = 0;
@@ -62,19 +80,50 @@ function updateCarousel() {
 }
 function moveCarousel(direction) {
   const index = Math.max(0, Math.min(cards.length - 1, currentCardIndex() + direction));
-  track.scrollTo({ left: cards[index].offsetLeft - cards[0].offsetLeft, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+  track.scrollTo({ left: cards[index].offsetLeft - cards[0].offsetLeft, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
 }
 previous.addEventListener('click', () => moveCarousel(-1));
 next.addEventListener('click', () => moveCarousel(1));
 track.addEventListener('scroll', updateCarousel, { passive: true });
 window.addEventListener('resize', updateCarousel);
-window.addEventListener('resize', () => {
-  if (!sizeTouched) {
-    fontSize.value = window.innerWidth < 500 ? '64' : '96';
-    updateSize();
-  }
-});
 updateCarousel();
+
+const imageDialog = document.querySelector('#image-dialog');
+const dialogImage = document.querySelector('#image-dialog-image');
+const dialogCaption = document.querySelector('#image-dialog-caption');
+const licenseDialog = document.querySelector('#license-dialog');
+const licenseFrame = document.querySelector('#license-content');
+const licenseTitle = document.querySelector('#license-dialog-title');
+let lastDialogTrigger = null;
+function openDialog(dialog, trigger) {
+  lastDialogTrigger = trigger;
+  dialog.showModal();
+  dialog.querySelector('[data-close]').focus();
+}
+document.querySelectorAll('.image-link').forEach(link => link.addEventListener('click', event => {
+  event.preventDefault();
+  dialogImage.src = link.href;
+  dialogImage.alt = link.querySelector('img').alt;
+  dialogCaption.textContent = link.dataset.caption;
+  openDialog(imageDialog, link);
+}));
+document.querySelectorAll('[data-license]').forEach(link => link.addEventListener('click', event => {
+  event.preventDefault();
+  licenseTitle.textContent = link.dataset.license;
+  licenseFrame.src = link.href;
+  licenseFrame.title = link.dataset.license + ' text';
+  openDialog(licenseDialog, link);
+}));
+[imageDialog, licenseDialog].forEach(dialog => {
+  dialog.querySelector('[data-close]').addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  dialog.addEventListener('close', () => {
+    if (dialog === imageDialog) dialogImage.removeAttribute('src');
+    if (lastDialogTrigger) lastDialogTrigger.focus();
+  });
+});
 
 if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   document.documentElement.classList.add('js-ready');
