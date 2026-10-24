@@ -1,15 +1,15 @@
-# Fluma
+# FLUMA
 
-Fluma is a liquid organic display typeface with soft, tapering forms. It is intended for headlines, branding, and other display settings. The font covers GF Latin Core, including Turkish (Ç ç Ğ ğ İ ı Ö ö Ş ş Ü ü).
+FLUMA is a liquid organic display typeface with soft, tapering forms. It is intended for headlines, branding, and other display settings. The font covers GF Latin Core, including Turkish (Ç ç Ğ ğ İ ı Ö ö Ş ş Ü ü).
 
 ![Fluma specimen cover](documentation/article/specimen01.png)
 
 ## Try and download
 
 - [Explore Fluma and try the typeface](https://baturaykocatepe.github.io/Fluma-Font/)
-- [Download Fluma Regular 1.000](https://github.com/baturaykocatepe/Fluma-Font/releases/latest/download/Fluma-1.000.zip) (TTF, OTF, WOFF, WOFF2, and OFL license)
+- [Download the complete FLUMA pack](https://github.com/baturaykocatepe/Fluma-Font/releases/latest/download/Fluma-Font.zip) (TTF, OTF, WOFF, WOFF2, all 22 specimens, and separate font/image licenses)
 
-The font is open source under the SIL Open Font License 1.1. The specimen images have a [separate CC BY-SA 4.0 license](documentation/image-license.txt). The Google Fonts [submission](https://github.com/google/fonts/issues/11060) is under review; this independent release is available now.
+The font is open source under the SIL Open Font License 1.1. The specimen images have a [separate CC BY-SA 4.0 license](documentation/image-license.txt). The Google Fonts [submission](https://github.com/google/fonts/issues/11060) is under review; this independent release is available now. The release pack is made with `python3 tools/package_release.py /path/to/Fluma-Font.zip`.
 
 ## Design
 
@@ -70,6 +70,11 @@ bash sources/build.sh
 
 When you update your font (new version or new release), please report all notable changes here, with a date.
 [Font Versioning](https://github.com/googlefonts/gf-docs/tree/main/Spec#font-versioning) is based on semver.
+
+**24 October 2026. FLUMA website and complete download pack (font remains Version 1.000)**
+
+- Refined the website with the supplied FLUMA logo and favicon, a responsive visual story, an interactive type tester, a selected applications carousel, and all 22 specimens in the page gallery.
+- Replaced the release ZIP with `Fluma-Font.zip`, containing four font formats, all 22 original specimen images, and separate font/image licenses. The font sources, binaries, and specimen PNGs were not changed.
 
 **24 October 2026. Public download and typeface website (font remains Version 1.000)**
 
