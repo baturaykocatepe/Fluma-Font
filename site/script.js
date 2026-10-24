@@ -20,7 +20,13 @@ document.addEventListener('keydown', event => {
   }
 });
 
-document.querySelector('.back-top').addEventListener('click', () => {
+const backTop = document.querySelector('.back-top');
+function updateBackTop() {
+  backTop.classList.toggle('is-visible', window.scrollY > 600);
+}
+window.addEventListener('scroll', updateBackTop, { passive: true });
+updateBackTop();
+backTop.addEventListener('click', () => {
   closeMenu();
   window.scrollTo({ top: 0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
 });
