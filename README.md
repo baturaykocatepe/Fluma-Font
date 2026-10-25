@@ -1,12 +1,14 @@
 # FLUMA
 
-FLUMA is a liquid organic display typeface with soft, tapering forms. It is intended for headlines, branding, and other display settings. The font covers GF Latin Core, including Turkish (Ç ç Ğ ğ İ ı Ö ö Ş ş Ü ü).
+FLUMA is a free, open-source liquid organic display typeface designed by Baturay Kocatepe. Its rounded volumes and tapering strokes give headlines, visual identities, packaging, and posters an expressive rhythm. The single Regular style covers GF Latin Core, including Turkish (Ç ç Ğ ğ İ ı Ö ö Ş ş Ü ü).
 
 [Explore FLUMA and try the typeface](https://baturaykocatepe.github.io/Fluma-Font/) · [Download FLUMA Font](https://github.com/baturaykocatepe/Fluma-Font/releases/latest/download/Fluma-Font.zip) (TTF, OTF, WOFF, WOFF2, all 22 specimens, and separate font/image licenses)
 
+**Typeface facts:** Display classification; one Regular style; 337 encoded characters; SIL Open Font License 1.1. The [Google Fonts submission](https://github.com/google/fonts/issues/11060) is under review. This release is available independently of that review.
+
 ![Fluma specimen cover](documentation/article/specimen01.png)
 
-The font is open source under the SIL Open Font License 1.1. The specimen images have a [separate CC BY-SA 4.0 license](documentation/image-license.txt). The Google Fonts [submission](https://github.com/google/fonts/issues/11060) is under review; this independent release is available now. The release pack is made with `python3 tools/package_release.py /path/to/Fluma-Font.zip`.
+The font is open source under the SIL Open Font License 1.1. The specimen images have a [separate CC BY-SA 4.0 license](documentation/image-license.txt). The release pack is made with `python3 tools/package_release.py /path/to/Fluma-Font.zip`.
 
 ## Design
 
